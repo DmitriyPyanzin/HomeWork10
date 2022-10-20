@@ -45,11 +45,11 @@ def start(update, context):
 
     for i in range(2):
         data_object = ch(list(data.keys()))
-        while data[data_object] == 0:
-            data_object = ch(list(data.keys()))
+        # while data[data_object] == 0:
+        #     data_object = ch(list(data.keys()))
         data[data_object] -= 1
-        points = check(data_object)
-        count_points_user.append(points)
+        # points = check(data_object)
+        count_points_user.append(check(data_object))
 
     for i in range(2):
         data_object = ch(list(data.keys()))
