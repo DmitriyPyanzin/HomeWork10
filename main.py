@@ -2,7 +2,6 @@ from telegram import Bot
 from telegram.ext import Updater, CommandHandler
 from script import check
 from for_obj import append_for as af
-import emoji
 
 
 bot = Bot(token='5632192857:AAEh9FM8DaTzdcbrQuv4Ftc92gtgHRHq0Fc')
