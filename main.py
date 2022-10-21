@@ -120,7 +120,7 @@ def stop(update, context):
 def rating(update, context):
     global user_wins, bot_wins
     context.bot.send_message(update.effective_chat.id, f"Количесво моих побед {bot_wins}\nПобеды низшей формы жизни"
-                                                       f"{user_wins}")
+                                                       f" {user_wins}")
     if bot_wins > user_wins:
         context.bot.send_message(update.effective_chat.id, f"Я обыгрываю тебя 🖕!")
     elif bot_wins == user_wins:
